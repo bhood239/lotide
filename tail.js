@@ -11,6 +11,7 @@ const tail = function(arr) {
   return newArr;
 };
 
+// Test code
 const words = ['yes', 'no', 'maybe'];
 
 tail(words);
