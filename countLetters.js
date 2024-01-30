@@ -1,0 +1,25 @@
+const assertEqual = function(actual, expected) {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+const countLetters = function(sentence, lettersTocount) {
+  const results = {};
+  for (const letter of sentence) {
+    if (results[letter]) {
+      results[letter]++;
+    } else {
+      results[letter] = 1;
+    }
+  }
+  return results;
+}
+
+console.log(countLetters("Ben Hood"));
+
+let result2 = countLetters("Why is the earth round");
+
+assertEqual(result2["e"], 2);
