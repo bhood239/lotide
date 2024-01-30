@@ -16,12 +16,13 @@ const countLetters = function(sentence) {
         results[letter] = 1;
       }
     }
-}
+  }
   return results;
-}
+};
 
 console.log(countLetters("Ben Hood"));
 
 let result2 = countLetters("Why is the earth round");
 
 assertEqual(result2["e"], 2);
+assertEqual(result2["h"], 3);
