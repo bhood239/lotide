@@ -40,12 +40,12 @@ const eqObjects = function(object1, object2) {
 
 const suitObject = {color: "blue", size: "large", piece: "3"};
 const anotherSuitObject = {size: "large", piece: "3", color: "blue"};
-//assertEqual(eqObjects(suitObject, anotherSuitObject), true);
+assertEqual(eqObjects(suitObject, anotherSuitObject), true);
 
 const dressObject = {color: "red", size: "large", design: "flowers"};
-//assertEqual(eqObjects(suitObject, dressObject), false);
+assertEqual(eqObjects(suitObject, dressObject), false);
 
-//assertEqual(eqObjects(dressObject, anotherSuitObject), false);
+assertEqual(eqObjects(dressObject, anotherSuitObject), false);
 
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
 const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
