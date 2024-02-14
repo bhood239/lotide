@@ -19,7 +19,7 @@ const findKey = function(object, callback) {
     }
   }
   return result;
-}
+};
 
 let test1 = findKey({
   "Blue Hill": { stars: 1 },
@@ -28,7 +28,7 @@ let test1 = findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2) // => "noma"
+}, x => x.stars === 2); // => "noma"
 
 assertEqual(test1, "noma");
 
@@ -37,6 +37,6 @@ let test2 = findKey({
   "Dog": { legs: 4},
   "Snake": { legs: 0},
   "Spider": { legs: 8}
-}, x => x.legs === 0) // => "Snake"
+}, x => x.legs === 0); // => "Snake"
 
 assertEqual(test2, "Snake");
