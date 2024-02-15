@@ -1,5 +1,3 @@
-const assertEqual = require(`../assertEqual`);
-
 const assert = require('chai').assert;
 const eqArrays = require(`../eqArrays`);
 
