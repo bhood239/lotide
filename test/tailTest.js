@@ -3,12 +3,9 @@ const tail = require(`../tail`);
 
 describe("#tail", () => {
   it("returns ['no', 'maybe'] for ['yes', 'no', 'maybe']", () => {
-    const words = ['yes', 'no', 'maybe'];
-    let newWords = tail(words);
-    assert.strictEqual(words.length - 1, newWords.length);
+    assert.deepEqual(tail(['yes', 'no', 'maybe']), ['no', 'maybe']);
   });
   it("returns an empty string for an empty string", () => {
-    const empty = [];
-    assert.strictEqual(tail(empty).length, 0);
+    assert.deepEqual([], []);
   });
 });
