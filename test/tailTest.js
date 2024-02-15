@@ -6,6 +6,6 @@ describe("#tail", () => {
     assert.deepEqual(tail(['yes', 'no', 'maybe']), ['no', 'maybe']);
   });
   it("returns an empty string for an empty string", () => {
-    assert.deepEqual([], []);
+    assert.deepEqual(tail(['fairmont', 'chateau', 'whistler']), ['chateau', 'whistler']);
   });
 });
