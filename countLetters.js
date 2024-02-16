@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const countLetters = function(sentence) {
   const results = {};
@@ -26,3 +20,5 @@ let result2 = countLetters("Why is the earth round");
 
 assertEqual(result2["e"], 2);
 assertEqual(result2["h"], 3);
+
+module.exports = countLetters;
