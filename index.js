@@ -8,6 +8,13 @@ const findKeyByValue = require('./findKeyByValue');
 const flatten = require('./flatten');
 const letterPositions = require('./letterPositions');
 const map = require('./map');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertEqual = require('./assertEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
+const eqObjects = require('./eqObjects');
+const eqArrays = require('./eqArrays');
 
 module.exports = {
   head: head,
@@ -19,5 +26,12 @@ module.exports = {
   findKeyByValue: findKeyByValue,
   flatten: flatten,
   letterPositions: letterPositions,
-  map: map
+  map: map,
+  takeUntil: takeUntil,
+  without: without,
+  assertArraysEqual: assertArraysEqual,
+  assertEqual: assertEqual,
+  assertObjectsEqual: assertObjectsEqual,
+  eqObjects: eqObjects,
+  eqArrays: eqArrays
 };
