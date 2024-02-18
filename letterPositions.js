@@ -14,8 +14,6 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions("hello"));
-
 assertArraysEqual(letterPositions("hello").l, [2, 3]);
 
 assertArraysEqual(letterPositions("all time fall time").l, [1, 2, 11, 12]);

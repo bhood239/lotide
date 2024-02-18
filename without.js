@@ -1,7 +1,7 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
 
-let without = function(selection, removal) {
+const without = function(selection, removal) {
   let newSelection = selection.slice();
 
   for (let i = 0; i < removal.length; i++) {

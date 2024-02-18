@@ -3,8 +3,8 @@ const assertEqual = require('./assertEqual');
 const findKeyByValue = function(testObject, valueToFind) {
   let result = undefined;
 
-  let keys = Object.keys(testObject);
-  let values = Object.values(testObject);
+  const keys = Object.keys(testObject);
+  const values = Object.values(testObject);
 
   for (let i = 0; i < values.length; i++) {
     if (values[i] === valueToFind) {

@@ -15,7 +15,7 @@ const findKey = function(object, callback) {
   return result;
 };
 
-let test1 = findKey({
+const test1 = findKey({
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
   "noma":      { stars: 2 },
@@ -26,7 +26,7 @@ let test1 = findKey({
 
 assertEqual(test1, "noma");
 
-let test2 = findKey({
+const test2 = findKey({
   "Duck": { legs: 2 },
   "Dog": { legs: 4},
   "Snake": { legs: 0},
