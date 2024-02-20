@@ -14,7 +14,6 @@ const countLetters = function(sentence) {
   return results;
 };
 
-console.log(countLetters("Ben Hood"));
 
 const result2 = countLetters("Why is the earth round");
 
